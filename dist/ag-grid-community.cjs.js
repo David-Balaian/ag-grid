@@ -20353,10 +20353,10 @@ var CellComp = /** @class */ (function (_super) {
             }
         }
         // if another cell was focused, and we are editing, then stop editing
-        var fullRowEdit = this.beans.gridOptionsWrapper.isFullRowEdit();
-        if (!cellFocused && !fullRowEdit && this.editingCell) {
-            this.stopRowOrCellEdit();
-        }
+        // var fullRowEdit = this.beans.gridOptionsWrapper.isFullRowEdit();
+        // if (!cellFocused && !fullRowEdit && this.editingCell) {
+        //     this.stopRowOrCellEdit();
+        // }
     };
     // pass in 'true' to cancel the editing.
     CellComp.prototype.stopRowOrCellEdit = function (cancel) {

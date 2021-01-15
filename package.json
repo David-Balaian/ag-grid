@@ -1,70 +1,22 @@
 {
-  "name": "ag-grid-community",
-  "version": "24.1.0",
-  "description": "Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web Components",
-  "main": "./dist/ag-grid-community.cjs.js",
-  "typings": "./main.d.ts",
+  "name": "@balaian/table-example-like-excel",
+  "version": "1.0.0",
+  "description": "![alt text](./github-banner.png \"ag-Grid\")",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ag-grid/ag-grid.git"
+    "url": "git+https://github.com/David-Balaian/ag-grid.git"
   },
-  "scripts": {
-    "initSubModules": "sh ./scripts/initialiseSubModules.sh",
-    "initLatest": "npm run initSubModules && sh ./scripts/switchToBranch.sh latest",
-    "initMarketing": "git checkout marketing && npm run updateCoreDependencies && npm run buildCore",
-    "initMaster": "npm run initSubModules && sh ./scripts/switchToBranch.sh master",
-    "initIntelliJ": "cp .idea/workspace.xml.default .idea/workspace.xml",
-    "init": "npm run initLatest && npm run updateAndRebuild",
-    "updateSubModules": "sh ./scripts/updateSubModules.sh",
-    "clean": "npx lerna run clean && npx lerna clean --yes",
-    "bootstrap": "npx lerna bootstrap --no-ci",
-    "build": "npx lerna run build --ignore '{ag-grid-polymer-example}'",
-    "package": "npx lerna run package --parallel --ignore '{ag-grid-polymer-example}' && npx lerna run package --scope '{ag-grid-community,ag-grid-enterprise}'",
-    "test": "npx lerna run test --stream",
-    "cleanCoreDependencies": "npx lerna clean --yes --scope '{ag-grid-angular,ag-grid-react,ag-grid-vue,ag-grid-docs}'",
-    "bootstrapCoreDependencies": "npx lerna bootstrap --scope '{ag-grid-angular,ag-grid-react,ag-grid-vue,ag-grid-docs}'",
-    "buildCoreDependencies": "npx lerna run build --scope '{ag-grid-angular,ag-grid-react,ag-grid-vue,ag-grid-docs}'",
-    "cleanCommunityModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").cleanCommunityModules()'",
-    "cleanEnterpriseModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").cleanEnterpriseModules()'",
-    "cleanModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").cleanModules()'",
-    "bootstrapCommunityModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").bootstrapCommunityModules()'",
-    "bootstrapEnterpriseModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").bootstrapEnterpriseModules()'",
-    "bootstrapModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").bootstrapModules()'",
-    "buildCommunityModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").buildCommunityModules()'",
-    "buildEnterpriseModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").buildEnterpriseModules()'",
-    "buildModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").buildModules()'",
-    "buildChartsModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").buildChartsModules()'",
-    "testCommunityModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").testCommunityModules()'",
-    "testEnterpriseModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").testEnterpriseModules()'",
-    "testModules": "node -e 'require(\"./scripts/modules/lernaModules.js\").testModules()'",
-    "buildFrameworkExamples": "npx lerna run build --scope '{ag-grid-angular-cli-example,ag-grid-react-example,ag-grid-vue-example}'",
-    "cleanLegacy": "npx lerna clean --scope '{ag-grid-community,ag-grid-enterprise}'",
-    "bootstrapLegacy": "npx lerna bootstrap --scope '{ag-grid-community,ag-grid-enterprise}'",
-    "buildLegacy": "npx lerna run build --scope '{ag-grid-community,ag-grid-enterprise}'",
-    "buildAngular": "npx lerna run build --scope '{@ag-grid-community/core,ag-grid-angular}'",
-    "buildVue": "npx lerna run build --scope '{@ag-grid-community/core,ag-grid-vue}'",
-    "buildReact": "npx lerna run build --scope '{@ag-grid-community/core,ag-grid-react}'",
-    "docs": "cd grid-packages/ag-grid-docs && npm start",
-    "docs-core-only": "cd grid-packages/ag-grid-docs && npm run serve-core-only",
-    "docsWithFormatting": "cd grid-packages/ag-grid-docs && npm run serve-with-formatting",
-    "updateAndRebuild": "npm i && npm run bootstrap && npm run build",
-    "cleanAndRebuild": "npm run clean && npm run updateAndRebuild",
-    "ciBuildAndTest": "cd grid-packages/ag-grid-docs && node -e 'require(\"./lernaOperations.js\").rebuildPackagesBasedOnChangeState()'",
-    "ciUpdateRebuildAndTest": "npm i && npm run bootstrap && npm run ciBuildAndTest"
+  "author": "asd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/David-Balaian/ag-grid/issues"
   },
-  "devDependencies": {
-    "archiver": "^3.0.0",
-    "command-line-args": "^5.1.1",
-    "glob": "^7.1.6",
-    "inquirer": "^7.0.0",
-    "lerna": "^3.18.3",
-    "lighthouse": "^5.4.0",
-    "rollup": "^1.21.2",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0",
-    "terser": "^4.3.9",
-    "typescript": "~3.6.5",
-    "walk": "^2.3.14"
-  },
-  "dependencies": {}
+  "homepage": "https://github.com/David-Balaian/ag-grid#readme",
+  "keywords": [
+    "asd"
+  ]
 }
