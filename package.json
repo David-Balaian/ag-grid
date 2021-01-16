@@ -1,14 +1,19 @@
 {
-  "name": "@balaian/table-example-like-excel",
+  "name": "@balaian/ag-grid-community",
   "version": "1.0.0",
   "description": "![alt text](./github-banner.png \"ag-Grid\")",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "build": "react-scripts build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/David-Balaian/ag-grid.git"
+    "url": "David-Balaian/ag-grid.git"
   },
   "author": "asd",
   "license": "MIT",
