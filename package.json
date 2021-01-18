@@ -1,5 +1,5 @@
 {
-  "name": "@balaian/ag-grid-community",
+  "name": "ag-grid-community",
   "version": "1.0.0",
   "description": "![alt text](./github-banner.png \"ag-Grid\")",
   "main": "main.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "David-Balaian/ag-grid.git"
+    "url": "git+https://github.com/David-Balaian/ag-grid.git"
   },
   "author": "asd",
   "license": "MIT",
