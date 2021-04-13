@@ -217,12 +217,13 @@ export class LicenseManager extends BeanStub {
     }
 
     private outputInvalidLicenseKey() {
-        console.error('*****************************************************************************************************************');
-        console.error('***************************************** ag-Grid Enterprise License ********************************************');
-        console.error('********************************************* Invalid License ***************************************************');
-        console.error('* Your license for ag-Grid Enterprise is not valid - please contact info@ag-grid.com to obtain a valid license. *');
-        console.error('*****************************************************************************************************************');
-        console.error('*****************************************************************************************************************');
+                // console.error('*****************************************************************************************************************');
+        // console.error('***************************************** ag-Grid Enterprise License ********************************************');
+        // console.error('********************************************* Invalid License ***************************************************');
+        // console.error('* Your license for ag-Grid Enterprise is not valid - please contact info@ag-grid.com to obtain a valid license. *');
+        // console.error('*****************************************************************************************************************');
+        // console.error('*****************************************************************************************************************');
+
 
         this.watermarkMessage = "Invalid License";
     }
@@ -240,14 +241,14 @@ export class LicenseManager extends BeanStub {
     }
 
     private outputMissingLicenseKey() {
-        console.error('****************************************************************************************************************');
-        console.error('***************************************** ag-Grid Enterprise License *******************************************');
-        console.error('****************************************** License Key Not Found ***********************************************');
-        console.error('* All ag-Grid Enterprise features are unlocked.                                                                *');
-        console.error('* This is an evaluation only version, it is not licensed for development projects intended for production.     *');
-        console.error('* If you want to hide the watermark, please email info@ag-grid.com for a trial license.                        *');
-        console.error('****************************************************************************************************************');
-        console.error('****************************************************************************************************************');
+        // console.error('****************************************************************************************************************');
+        // console.error('***************************************** ag-Grid Enterprise License *******************************************');
+        // console.error('****************************************** License Key Not Found ***********************************************');
+        // console.error('* All ag-Grid Enterprise features are unlocked.                                                                *');
+        // console.error('* This is an evaluation only version, it is not licensed for development projects intended for production.     *');
+        // console.error('* If you want to hide the watermark, please email info@ag-grid.com for a trial license.                        *');
+        // console.error('****************************************************************************************************************');
+        // console.error('****************************************************************************************************************');
 
         this.watermarkMessage = "For Trial Use Only";
     }
